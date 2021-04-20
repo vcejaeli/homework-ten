@@ -1,0 +1,124 @@
+//page for all of the individual country tours + their content
+.packpage {
+    padding-top: 50px;
+    max-width: 978px;
+    height: 1725px;
+    margin: 0 auto;
+    // background-color: peachpuff;
+
+    .packimages {
+        max-width: 978px;
+        height: 413px;
+        color: #fff;
+        background-color: peru;
+
+        h1 {
+            font-family: Proxima;
+            font-size: 80px;
+            padding-left: 30px;
+            padding-top: 18px;
+        }
+        p {
+            font-family: Proxima;
+            font-size: 30px;
+            margin-left: 400px;
+            margin-top: 140px;
+        }
+    }
+
+    .packimagesthree {
+        margin-top: 40px;
+        max-width: 978px;
+        min-height: 347px;
+        justify-content: space-evenly;
+        display: flex;
+        // background-color: greenyellow;
+
+        .packimagesthree-left{
+            float: left;
+            width: 298px;
+            height: 347px;
+            background-color: cadetblue;
+        }
+        .packimagesthree-mid{
+            float: left;
+            width: 298px;
+            height: 347px;
+            background-color: lightgreen;
+        }
+        .packimagesthree-right{
+            float: left;
+            width: 298px;
+            height: 347px;
+            background-color: lightskyblue;
+        }
+    }
+
+    .packtext {
+        // background-color: lightsalmon;
+        margin-top: 29px;
+        min-height: 776px;
+        max-width: 978px;
+
+        h1 {
+            font-family: Proxima;
+            font-size: 60px;
+            // border-bottom: #000 solid 2px;
+        }
+        h1:after {
+            content: ""; /* This is necessary for the pseudo element to work. */ 
+            display: block; /* This will put the pseudo element on its own line. */
+            // margin: 0 auto; /* This will center the border. */
+            width: 10%; /* Change this to whatever width you want. */
+            padding-top: 1px; /* This creates some space between the element and the border. */
+            border-bottom: 1px solid black; /* This creates the border. Replace black with whatever color you want. */
+        }
+        p {
+            position: relative;
+            min-height: 27px;
+            width: 100%;
+            padding-left: 25px;
+            padding-right: 10px;
+        }
+        p:last-of-type {
+            margin-bottom: 15px;
+        }
+
+        .day {
+            margin-bottom: 70px;
+            // background-color: aqua;
+        }
+    }
+
+    .packbutton {
+        @include siteButton(10px 8px, 15px);
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        font-family: Gill;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        outline: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .packpage {
+        max-width: 978px;
+        // height: 1725px;
+    }
+
+    .packimagesthree {
+        width: 978px;
+        // justify-content: space-around;
+        // display: flexbox;
+        // align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+// why is my footer goin berzerk

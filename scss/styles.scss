@@ -1,0 +1,41 @@
+@import "variables.scss";
+@import "mixins.scss";
+@import "structure.scss";
+
+//home (DONT forget folder name)
+@import "home/hero.scss";
+@import "home/promo-tours.scss";
+@import "home/nav.scss";
+
+//form
+@import "form/booking-form.scss";
+
+//footer
+@import "footer/footer.scss";
+
+//about
+@import "about/about.scss";
+
+// tours
+@import "tours/tour.scss";
+
+//travel-packs
+@import "travelpacks/packpage.scss";
+
+//special offers
+@import "specialO/specialO.scss";
+
+//contact us
+@import "contact/contactUs.scss";
+
+//blog
+@import "blog/blog.scss";
+
+// @import "variables.scss";
+// @import "scss/mixins.scss";
+// @import "structure.scss";
+
+// @import "tours/tour.scss";
+
+
+// mixins go BELOW variables

@@ -1,0 +1,150 @@
+.tour {
+    header {
+        // max-width: 981px;
+        @include center(981px, 20px auto 0 auto);
+        // this mixin centers the main box
+        height: 200px;
+        background-image: linear-gradient(to bottom, $overlay-black-50, $overlay-black-50), 
+        url(../assets/images-tours/tours-header.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            text-transform: uppercase;
+            color: #fff;
+            font-family: Proxima;
+            font-size: 60px;
+        }
+    }
+
+    .alltours {
+        span {
+            text-transform: uppercase;
+        }
+
+        // max-width: 818px;
+        @include center(818px, 48px auto 0 auto);
+        min-height: 200px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // this made it stack
+        // background-color: mediumseagreen;
+
+        // where each promo is #
+        #israel-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-israel.jpg);
+        }
+
+        #usa-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-usa.jpg);
+        }
+
+        #australia-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-australia.jpg);
+        }
+
+        #nz-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-nz.jpg);
+        }
+
+        #france-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-france.jpg);
+        }
+
+        #egypt-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-egypt.jpg);
+        }
+
+        #japan-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-japan.jpg);
+        }
+
+        #canada-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-canada.jpg);
+        }
+
+        #uae-promo {
+            // background-color: maroon;
+            background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50),
+            url(../assets/images-tours/tour-uae.jpg);
+        }
+
+        .tourPromo {
+            width: 236px;
+            height: 304px;
+            // margin: 0 55px 55px 0;
+            // top right bottom left
+            // margin-right: 10px;
+            margin-bottom: 55px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            // background-color: mediumslateblue;
+            flex-wrap: wrap;
+            text-align: center;
+
+            .promoContent {
+                color: #fff;
+                // font-weight: lighter;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding-top: 60px;
+
+                h1 {
+                    font-size: 65px;
+                    font-family: Proxima;
+                    margin-top: -15px;
+                }
+                h2 {
+                    // this proxima has no lowercase
+                    font-size: 35px;
+                    font-family: Proxima;
+                    margin-top: -25px;
+                    margin-bottom: 65px
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+        
+            .promoBtn {
+                @include siteButton(10px 8px, 15px);                
+                color: #fff;
+                
+            }
+        }
+    }
+}
+
+@media all and (max-width: 900px){
+    .tour {
+        .tours {
+            flex-direction: column;
+            align-items: center;
+            // background-color: orange;
+        }
+    }
+}
+
+//  1 19 40
+//  1 36 00

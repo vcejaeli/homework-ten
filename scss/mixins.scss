@@ -1,0 +1,15 @@
+@mixin center($elementWidth, $elementMargin: 0 auto) {
+    max-width: $elementWidth;
+    margin: $elementMargin;
+}
+
+@mixin siteButton($btnPadding: 10px, $btnRadius: 20px, $btnBG: $site-blue) {
+    padding: $btnPadding;
+    border-radius: $btnRadius;
+    background-color: $btnBG;
+}
+
+// @mixin "name" ("properties "name" will have") 
+
+// the very last item on a mixin is for the one's that will
+// never change! for example: $site-blue for buttons. 

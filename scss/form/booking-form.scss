@@ -1,0 +1,316 @@
+.booking-form {
+    max-width: 1280px;
+    min-height: 890px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 194px;
+    padding-right: 210px;
+    max-width: 100%;
+    font-size: 5vh;
+    // background-color: rebeccapurple;
+
+    .whole-booking {
+        max-width: 895px;
+        min-height: 890px;
+        font-family: Gill;
+        font-weight: bolder;
+        font-size: 14px;
+        color: #000;
+        // background-color: peachpuff;
+
+
+        // .inp-25 {
+        //     float: left;
+        //     width: 25%;
+        //     margin-top: 6px;
+        // }
+        // .inp-75 {
+        //     float: left;
+        //     width: 75%;
+        //     margin-top: 6px;
+        // }
+        // @media screen and (max-width: 600px) {
+        //     .inp-25, .inp-75, input[type=submit] {
+        //         width: 100%;
+        //         margin-top: 0;
+        //     }
+        // }
+
+            input {
+                border: 1px solid $site-blue;
+                border-radius: 4px;
+                padding: 12px;
+                font-family: Gill;
+                font-weight: bolder;
+                font-size: 18px;
+                width: 100%;
+
+                resize: vertical;
+            }
+
+
+        #whole-header {
+            font-family: Proxima;
+            font-weight: lighter;
+            font-size: 60px;
+        }
+
+
+        .bf-top2 {
+            // background-color: aquamarine;
+            height: 136px;
+            margin-bottom: 20px;
+            // this is space between sections
+            
+            #boxes-top-A {
+                // background-color: azure;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                // this is space between lines inside this section
+
+                #boxleftA {
+                    width: 344px;
+                    height: 58px;
+                    // background-color: peru;
+                }
+                #boxrightA {
+                    width: 453px;
+                    height: 58px;
+                    // background-color: pink;
+                }
+            }
+            #boxes-top-B {
+                // background-color: lightgray;
+                display: flex;
+                justify-content: space-between;
+
+                #boxleftB {
+                    width: 344px;
+                    height: 58px;
+                    // background-color: rosybrown;
+                }
+                #boxrightB {
+                    width: 453px;
+                    height: 58px;
+                    // background-color: palegoldenrod;
+                }
+            }
+        }
+
+        .bf-mid2 {
+            height: 136px;
+            margin-bottom: 20px;
+
+            h2 {
+                width: 115px;
+                height: 58px;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                // background-color: slateblue;
+            }
+            .midC {
+                height: 58px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+                // background-color: azure;
+    
+                #mid-box-C {
+                    height: 58px;
+                    width: 698px;
+                    // background-color: lightsalmon;
+                }
+            }
+            .midD {
+                height: 58px;
+                display: flex;
+                justify-content: space-between;
+                // background-color: lightgray;
+    
+                #mid-box-D {
+                    height: 58px;
+                    width: 698px;
+                    // background-color: rebeccapurple;
+                }
+            }
+        }
+
+        .bf-bottom3 {
+            width: 895px;
+            height: 58px;
+            margin-bottom: 20px;
+            // background-color: goldenrod;          
+
+            .drop3 {
+                // background-color: cadetblue;
+                display: flex;
+                justify-content: space-between;
+    
+                .drop3one {
+                    width: 223px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    // background-color: cadetblue;
+                }
+
+                .drop3two {
+                    width: 214px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    // background-color: chartreuse;
+                }   
+
+                .drop3three {
+                    width: 223px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .dropbtn {
+                    text-align: left;
+                    background-color: #fff;
+                    color: black;
+                    width: 103px;
+                    height: 58px;
+                    border: none;
+                    cursor: pointer;
+                    border: 1px solid $site-blue;
+                    background-image: url(../assets/images-home/form/down-arrow.svg);
+                    background-repeat: no-repeat;
+                    background-position: 60px 15px;
+                    background-size: 3vh;
+                    
+                }
+            }
+        }
+
+        .bf-message {
+            height: 242px;
+            max-width: 895px;
+            margin-bottom: 37px;
+            
+            // background-color: green;
+
+            #messagebox {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+
+        .formbtn {
+            display: flex;
+            justify-content: center;
+
+            #bf-btn {
+                width: 890px;
+                height: 61px;
+                border-radius: 22px;
+                border: none;
+                font-size: 15px;
+                font-family: Gill;
+                font-weight: bolder;
+                outline: none;
+                color: #fff;
+                background-color: $site-blue;
+                transition-duration: .2s;
+            }
+            #bf-btn:hover {
+                border-radius: 12px;
+                font-size: 18px;
+            }
+            #bf-btn:focus {
+                background-color: white;
+                color: $site-blue;
+                border: 2px solid $site-blue;
+                outline: none;
+            }
+        }   
+
+    }
+}
+
+
+
+// @media only screen and (max-width: 1060px) {
+//     .promo-tours {
+//         width: 304px;
+//         flex-direction: column;
+//         padding-left: 0px;
+//         padding-right: 0px;
+//         // background-color: $site-blue;
+
+//         .promo {
+//             margin-bottom: 10px;
+//         }
+//     }
+// }
+
+@media only screen and (max-width: 1060px) {
+    .whole-booking {
+        width: 304px;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        flex-wrap: wrap;
+        // background-color: salmon;
+    }
+
+    .drop3 {
+        padding: 20px;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        // background-color: brown;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    // .drop3one, .drop3two, .drop3three {
+    //     flex-direction: column;
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     padding-left: 50px;
+    //     padding-right: 0px;
+    //     // background-color: sandybrown;
+    //     // this form is tough
+    // }
+
+    .bf-message {
+        // background-color: seagreen;
+        // padding-top: 41vh;
+        padding-top: 80%;
+    }
+
+}
+
+
+
+
+// .dropbtn-content {
+                //     display: none;
+                //     position: absolute;
+                //     background-color: lightgray;
+                //     max-width: 60px;
+                //     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                //     z-index: 1;
+                // }
+                // .dropbtn-content option {
+                //     color: #000;
+                //     padding: 5px 5px;
+                //     text-decoration: none;
+                //     display: block;
+                // }
+                // .dropbtn-content h3:hover {background-color: $site-blue};
+                // .dropbtn:hover .dropbtn-content {
+                //     display: block;
+                // }
+                // .dropbtn-content:hover .dropbtn {
+                //     background-color: $site-blue;
+                // }

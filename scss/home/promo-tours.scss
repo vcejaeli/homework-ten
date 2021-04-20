@@ -1,0 +1,113 @@
+.promo-tours {
+    max-width: 1280px;
+    min-height: 304px;
+    margin: -50px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 160px;
+    padding-right: 160px;
+    color: #fff;
+    // display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+    text-align: center;
+    // max-width: 100%;
+    font-size: 5vh;
+    // background-color: peachpuff;
+    // we can add the layout stuff for all 3 here
+    // can I make a variable (not class) with css properties...?
+
+
+    .promo {
+        background-color: peru;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        height: 304px;
+        width: 236px;
+        margin-right: 50px;
+        padding-top: 60px;
+        
+
+        h1 {
+            font-size: 65px;
+            font-family: Proxima;
+            margin-top: -15px;
+        }
+        h2 {
+            font-size: 35px;
+            font-family: Proxima;
+            margin-top: -25px;
+        }
+        .learn-more-btn {
+            width: 130px;
+            height: 40px;
+            font-size: 16px;
+            font-family: Gill;
+            font-weight: bolder;
+            background-color: $site-blue;
+            border-radius: 22px;
+            border-style: none;
+            color: #fff;
+            margin-top: 34px;
+            transition-duration: .2s;
+        }
+        .learn-more-btn:hover {
+            border-radius: 12px;
+            font-size: 18px;
+        }
+        .learn-more-btn:focus {
+            background-color: white;
+            color: $site-blue;
+            outline: none;
+        }
+
+        // promo font size 60 30 15
+        // proxima proxima gill
+        // space between elements 62px 17px
+    }
+
+    #israel {
+        background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50), 
+        url(../assets/images-home/home-tour-israel.jpg);
+        
+        // background-color: mediumaquamarine;
+    }
+    #usa {
+        background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50), 
+        url(../assets/images-home/home-tour-usa.jpg);
+        // background-color: mediumorchid;
+    }
+    #australia {
+        background-image: linear-gradient(to right, $overlay-black-50, $overlay-black-50), 
+        url(../assets/images-home/home-tour-australia.jpg);
+        // background-color: mediumslateblue;
+    }
+
+
+}
+
+
+
+
+@media only screen and (max-width: 1060px) {
+    .promo-tours {
+        width: 304px;
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        // background-color: $site-blue;
+
+        .promo {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+// remember, 'display: flex;' is used in the parent and it is passed
+// to its children
+
+// margin :   top right bottom left

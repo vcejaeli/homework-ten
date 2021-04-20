@@ -1,0 +1,52 @@
+footer {
+    width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    max-width: 100%;
+    font-size: 1.7vh;
+    background-color: $site-blue;
+
+    .footerBody {
+        // background-color: rebeccapurple;
+        margin: 0 auto;
+        height: 42px;
+        // 26 for icons and text
+        width: 984px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        // display: flex;
+        // justify-content: space-between;
+        // height: auto;
+        // width: 30px;
+
+        // .footerLogo {
+
+        // }
+
+        p {
+            text-align: center;
+        }
+
+        .socialIcon {
+            // background-color: rosybrown;
+            height: 26px;
+            width: 125px;
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        .socialIcon img {            
+            height: 26px;
+            width: auto;
+        }
+    }
+}
+
+// remember: footer is an Element 
+//  <footer></footer>
+//  so since it's not a class, you don't need .footer

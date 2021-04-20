@@ -1,0 +1,151 @@
+.blogArea {
+    max-width: 980px;
+    margin: 0 auto;
+    margin-top: 55px;
+    margin-bottom: 100px;
+    // background-color: aquamarine;
+
+    #blogheader {
+        font-family: Proxima;
+        text-transform: uppercase;
+        letter-spacing: 8.5px;
+    }
+    #blogheader:after {
+        content: "";
+        display: block;
+        width: 10%;
+        padding-top: 6px;
+        border-bottom: 1px solid #000;
+    }
+
+    .blogMain {
+        max-width: 980px;
+        height: 800px;
+        // background-color: beige;
+        //changes below
+
+        .blog1 {
+            .blueSquare {
+                max-width: 60px;
+                height: 60px;
+                background-color: $site-blue;
+                text-transform: uppercase;
+                font-family: Gill;
+                justify-content: center;
+                text-align: center;
+                //20px --> from square
+                margin-right: 20px;
+                color: #fff;            
+    
+                #num {
+                    padding-top: 9px;
+                    font-size: 22px;
+                    margin-bottom: 0px;
+                }
+                #month {
+                    font-size: 12px;
+                }
+            }
+    
+            .blogimg {
+                float: right;
+                margin-top: -60px;
+                //removed max w
+                width: 900px;
+                height: 259px;
+                background-image: url(../assets/images-blog/blog.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: powderblue;
+            }
+            .blogtext {
+                float: left;
+                padding-left: 80px;
+                padding-top: 20px;
+                font-family: Gill;
+
+                position: relative;
+                min-height: 64px;
+                width: 380px;
+                // background-color: blue;
+
+                h1 {
+                    font-size: 15px;
+                }
+                p {
+                    // width: 380px;
+                    color: $site-blue;
+                    font-size: 12px;
+                }
+                p:last-of-type {
+                    margin-bottom: 55px;
+                }
+            }
+        }
+        
+
+        .blog2 {
+            //keeps both separated
+            padding-top: 390px;
+
+            .blueSquare {
+                max-width: 60px;
+                height: 60px;
+                background-color: $site-blue;
+                text-transform: uppercase;
+                font-family: Gill;
+                justify-content: center;
+                text-align: center;
+                //20px --> from square
+                margin-right: 20px;
+                color: #fff;            
+
+                #num {
+                    padding-top: 9px;
+                    font-size: 22px;
+                    margin-bottom: 0px;
+                }
+                #month {
+                    font-size: 12px;
+                }
+            }
+    
+            .blogimg {
+                float: right;
+                margin-top: -60px;
+                //removed max w
+                width: 900px;
+                height: 259px;
+                background-image: url(../assets/images-blog/blog.jpg);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: powderblue;
+            }
+            .blogtext {
+                float: left;
+                padding-left: 80px;
+                padding-top: 20px;
+                font-family: Gill;
+
+                position: relative;
+                min-height: 64px;
+                width: 380px;
+                // background-color: blue;
+
+                h1 {
+                    font-size: 15px;
+                }
+                p {
+                    // width: 380px;
+                    color: $site-blue;
+                    font-size: 12px;
+                }
+                p:last-of-type {
+                    margin-bottom: 55px;
+                }
+            }
+        }
+    }
+}

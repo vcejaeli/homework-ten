@@ -1,0 +1,152 @@
+.contactUs {
+    // background-color: indianred;
+    margin: 0 auto;
+    max-width: 981px;
+    height: 800px;
+    padding-top: 50px;
+    margin-bottom: 100px;
+
+    h1 {
+        font-family: Proxima;
+        text-transform: uppercase;
+        letter-spacing: 8.5px;
+    }
+    h1:after {
+        content: "";
+        display: block; 
+        // margin: 0 auto; /* This will center the border. */
+        width: 20%; 
+        padding-top: 6px; 
+        border-bottom: 1px solid black; 
+    }    
+
+    .contactMain {
+        display: flex;
+        // max-width: 981px;
+        width: 100%;
+        height: 442px;
+
+        .imgside {
+            padding-right: 71px;
+            width: 100%;
+            height: 442px;
+
+            .mapimg {
+                // max-width: 400px;
+                width: 100%;
+                height: 442px;
+                background-image: url(../assets/images-contact/map-01.jpg);
+                background-color: gold;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #maptext {
+                // color: lemonchiffon;
+                position: relative;
+                // min-height: 27px;
+                width: 400px;
+                padding-top: 34px;
+                font-family: Gill;
+                
+                p:last-of-type {
+                    // color: aqua;
+                    margin-bottom: 55px;
+                }
+            }
+        }
+
+        .formside {
+            height: 531px;
+            max-width: 522px;
+
+            .form {
+                // margin: 0 auto;
+                // display: inline-block;
+                font-family: Gill;
+                font-size: 16px;
+                font-weight: bold;
+                max-width: 529px;
+
+                input[type=text], select, textarea {
+                    max-width: 100%;
+                    padding: 12px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    margin-top: 6px;
+                    margin-bottom: 16px;
+                    resize: vertical;
+                }
+                input[type=submit] {
+                    background-color: $site-blue;
+                    color: white;
+                    padding: 12px 20px;
+                    border: none;
+                    border-radius: 1px;
+                    cursor: pointer;
+                    height: 60px;
+                    width: 168px;
+                    float: left;
+                }
+                // hover over mouse
+                input[type=submit]:hover {
+                    background-color: coral;
+                }
+                // background color and padding around form
+                .container {
+                    border-radius: 5px;
+                    background-color: #f2f2f2;
+                    padding: 20px;
+                }
+                #yname {
+                    width: 529px;
+                    height: auto;
+                }
+                #email {
+                    width: 529px;
+                    height: auto;
+                }
+                #company {
+                    width: 529px;
+                    height: auto;
+                }
+                #fmessage {
+                    width: 529px;
+                    min-height: 199px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .contactUs {
+        padding: 10px;
+        margin-bottom: 250px;
+        
+        .contactMain {
+            // background-color: aqua;   
+            display: inline-block;
+            
+
+            .form {
+                float: right;
+                width: 45%;
+                margin-top: 26px;
+                
+            }
+        }
+    }
+}
+
+
+
+// @media only screen and (max-width: 600px) {
+//     .about {
+//         padding: 10px;
+//         .about-bottom-section {
+//         }
+//     }
+// }
